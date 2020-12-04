@@ -1,0 +1,25 @@
+{
+  "name": "api-rest-firebase",
+  "version": "1.0.0",
+  "description": "API para teste do CloudFirestore como database",
+  "main": "source/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "api-rest-firebase"
+  },
+  "keywords": [
+    "api",
+    "firebase",
+    "cloud",
+    "firestore"
+  ],
+  "author": "Kayky Casagrande",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase": "^8.1.2"
+  }
+}
