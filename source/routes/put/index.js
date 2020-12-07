@@ -13,11 +13,11 @@ const db = require('../../database/connect');
 router.use(express.json());
 router.use(express.urlencoded());
 
-router.post('/', async (require, response) => {
+router.put('/', async (require, response) => {
 
-    await db.collection('livros').doc(require.body.id).update(require.body);
+    await db.collection('livros').add(require.body);
 
-    response.json({message: "alterado"})
+    response.json({message: "adicionado"})
 });
 
 
