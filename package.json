@@ -2,8 +2,9 @@
   "name": "api-rest-firebase",
   "version": "1.0.0",
   "description": "API para teste do CloudFirestore como database",
-  "main": "source/index.js",
+  "main": "source/server.js",
   "scripts": {
+    "dev": "nodemon source/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "firebase": "^8.1.2"
+    "firebase": "^8.1.2",
+    "firebase-admin": "^9.4.1",
+    "firebase-functions": "^3.12.0",
+    "nodemon": "^2.0.6"
   }
 }
