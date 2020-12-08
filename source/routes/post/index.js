@@ -15,7 +15,7 @@ router.use(express.urlencoded());
 
 router.post('/', async (require, response) => {
 
-    await db.collection('livros').doc(require.body.id).update(require.body);
+    await db.collection('livros').doc(require.body.id).update(require.body.data);
 
     response.json({message: "alterado"})
 });
